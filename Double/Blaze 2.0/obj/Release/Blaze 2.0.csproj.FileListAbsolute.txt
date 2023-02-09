@@ -1,0 +1,84 @@
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Double.exe.config
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Double.exe.manifest
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Double.application
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Double.exe
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Double.pdb
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\MySql.Data.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Newtonsoft.Json.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Telegram.Bot.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\WebDriver.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Google.Protobuf.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\ZstdNet.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Ubiety.Dns.Core.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\System.Buffers.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\MySql.Data.xml
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Newtonsoft.Json.xml
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\bin\Release\Telegram.Bot.xml
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.AssemblyReference.cache
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Form1.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.FrmLogin.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Properties.Resources.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Splash.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmConfiguracao.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmMensagem.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmPlacar.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmTelegram.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmTimeLine.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmUsuario.resources
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.GenerateResource.cache
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Double.exe.manifest
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Double.application
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.CopyComplete
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Double.exe
+C:\Users\Pichau\Documents\Robos\Double\Blaze 2.0\obj\Release\Double.pdb
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Double.exe.config
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Double.exe.manifest
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Double.application
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Double.exe
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Double.pdb
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\MySql.Data.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Newtonsoft.Json.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\System.Threading.Tasks.Extensions.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Telegram.Bot.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\WebDriver.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Google.Protobuf.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\ZstdNet.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\K4os.Compression.LZ4.Streams.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Ubiety.Dns.Core.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\System.Buffers.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\K4os.Compression.LZ4.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\K4os.Hash.xxHash.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\MySql.Data.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Newtonsoft.Json.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\System.Threading.Tasks.Extensions.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Release\Telegram.Bot.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Form1.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.FrmLogin.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Properties.Resources.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Splash.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmConfiguracao.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmMensagem.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmPlacar.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmTelegram.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmTimeLine.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze_2._0.Telas_menus.FrmUsuario.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.GenerateResource.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Double.exe.manifest
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Double.application
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Blaze 2.0.csproj.CopyComplete
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Double.exe
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Release\Double.pdb
