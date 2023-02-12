@@ -14,14 +14,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Double.exe.manifest" size="14701">
+    <dependentAssembly dependencyType="install" codebase="Double.exe.manifest" size="17758">
       <assemblyIdentity name="Double.exe" version="1.0.0.26" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vFNlzb7twZ7M8Ns+53QTytOiHgzsGxeiuu3VGHdHmAY=</dsig:DigestValue>
+        <dsig:DigestValue>nHmaU/wFSnSyastpkKIc/IsXiScHqqqkrbO/38/jAT4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

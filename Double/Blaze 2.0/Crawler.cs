@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Media;
 using System.Threading;
+using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Blaze_2._0 {
     class Crawler {
@@ -16,6 +19,7 @@ namespace Blaze_2._0 {
 
 
         ChromeDriver driver;
+        private IWebDriver _webDriver;
         public void Iniciar() {
             try {
                 DownloadChorme.DonwloadChorme();
@@ -27,28 +31,44 @@ namespace Blaze_2._0 {
                 service.HideCommandPromptWindow = true;
 
                 ChromeOptions options = new ChromeOptions();
-                // options.AddArgument("headless");
+                 // options.AddArgument("headless");
 
-                driver = new ChromeDriver(service, options);
-                //driver.Navigate().GoToUrl(Constantes.linkRobo);
+                try
+                {
+                    new DriverManager().SetUpDriver(new ChromeConfig(), "109.0.5414.74");
+
+                    driver = new ChromeDriver(service,options);
+
+                }
+                catch
+                {
+                    new DriverManager().SetUpDriver(new ChromeConfig(), "110.0.5481.30");
+                    driver = new ChromeDriver(service,options);
+
+                }
                 driver.Navigate().GoToUrl("https://casino.netbet.com/br/play/football-studio");
-                driver.FindElement(By.Id("LoginModal")).Click();
-                driver.FindElement(By.Id("LoginModal")).SendKeys("goesi195@gmail.com");
-                driver.FindElement(By.XPath("//*[@id=\"_1Hcn-kLmQsOrtPd9lYyKPX\"]")).Click();
-                driver.FindElement(By.XPath("//*[@id=\"_1Hcn-kLmQsOrtPd9lYyKPX\"]")).SendKeys("robofootbalstudio");
+                Thread.Sleep(10000);
+                driver.FindElement(By.Name("username")).Click();
+                driver.FindElement(By.Name("username")).SendKeys("goesi195@gmail.com");
+                driver.FindElement(By.Name("password")).Click();
+                driver.FindElement(By.Name("password")).SendKeys("robofootbalstudio");
                 driver.FindElement(By.XPath("//*[@id=\"LoginModal\"]/div/div/div/div/div[2]/div/div/div[2]/div/div/div/div/form/div[3]/div[1]/div/button")).Click();
-
-
+                Thread.Sleep(40000);
 
                 string[] ultimasEntradas = new string[10];
+                // var elementod = driver.FindElements(By.CssSelector("div[data-role ='history-statistic']"));
 
-                while (true) {
+                    var elementod = driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[6]/div/div[3]/div/div/div")).FindElements(By.ClassName("historyItem"));
+
+                while (true)
+                {
                     try {
 
 
                         int contador = 0;
-                        foreach (var elemento in driver.FindElement(By.ClassName("roulette-previous")).FindElement(By.ClassName("entries")).FindElements(By.ClassName("entry"))) {
-                            string dadoAtual = elemento.FindElement(By.ClassName("roulette-tile")).FindElement(By.ClassName("sm-box")).GetAttribute("class").Replace("sm-box ", "");
+                        foreach (var teste in elementod) 
+                        {
+                            string dadoAtual = teste.GetAttribute("style");
                             retornos[contador] = dadoAtual;
                             contador++;
                             if(contador >= 12) {
@@ -56,9 +76,14 @@ namespace Blaze_2._0 {
                             }
                         }
 
+                        driver.Navigate().GoToUrl(Constantes.linkRobo);
+                        foreach (var elemento in driver.FindElement(By.ClassName("roulette-previous")).FindElement(By.ClassName("entries")).FindElements(By.ClassName("entry")))
+                        {
+                            string dadoAtual = elemento.FindElement(By.ClassName("roulette-tile")).FindElement(By.ClassName("sm-box")).GetAttribute("class").Replace("sm-box ", "");
+                        }
 
 
-                        if (string.IsNullOrEmpty(ultimasEntradas[0]) &&
+                            if (string.IsNullOrEmpty(ultimasEntradas[0]) &&
                             string.IsNullOrEmpty(ultimasEntradas[1]) &&
                             string.IsNullOrEmpty(ultimasEntradas[2]) &&
                             string.IsNullOrEmpty(ultimasEntradas[3]) &&
