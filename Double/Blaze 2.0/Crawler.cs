@@ -8,6 +8,9 @@ using System.Threading;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using OpenQA.Selenium.Support.UI;
+using System.Linq;
+using Telegram.Bot.Types;
 
 namespace Blaze_2._0 {
     class Crawler {
@@ -53,33 +56,34 @@ namespace Blaze_2._0 {
                 driver.FindElement(By.Name("password")).Click();
                 driver.FindElement(By.Name("password")).SendKeys("robofootbalstudio");
                 driver.FindElement(By.XPath("//*[@id=\"LoginModal\"]/div/div/div/div/div[2]/div/div/div[2]/div/div/div/div/form/div[3]/div[1]/div/button")).Click();
-                Thread.Sleep(40000);
 
                 string[] ultimasEntradas = new string[10];
-                // var elementod = driver.FindElements(By.CssSelector("div[data-role ='history-statistic']"));
 
-                    var elementod = driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[6]/div/div[3]/div/div/div")).FindElements(By.ClassName("historyItem"));
+                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
+                IWebElement firstResult = wait.Until(e => e.FindElement(By.ClassName("game-iframe")));
+
+                IWebElement iframe = driver.FindElement(By.ClassName("game-iframe"));
+                driver.SwitchTo().Frame(iframe);
 
                 while (true)
                 {
                     try {
-
-
                         int contador = 0;
-                        foreach (var teste in elementod) 
+                        driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[1]/div/div/div/div/div[2]")).Click();
+                        foreach (var teste in driver.FindElement(By.CssSelector("div[data-role ='history-statistic']")).FindElements(By.ClassName("historyItem--a1907")))
                         {
-                            string dadoAtual = teste.GetAttribute("style");
+                            string dadoAtual = teste.FindElement(By.CssSelector("svg[fill = 'none'")).FindElement(By.CssSelector("g[filter = 'url(#history)'")).FindElement(By.CssSelector("text[font-size = '16'")).Text;
+                            if (dadoAtual == "V")
+                                dadoAtual = "blue";
+                            else if (dadoAtual == "C")
+                                dadoAtual = "red";
+                            else
+                                dadoAtual = "white";
                             retornos[contador] = dadoAtual;
                             contador++;
                             if(contador >= 12) {
                                 break;
                             }
-                        }
-
-                        driver.Navigate().GoToUrl(Constantes.linkRobo);
-                        foreach (var elemento in driver.FindElement(By.ClassName("roulette-previous")).FindElement(By.ClassName("entries")).FindElements(By.ClassName("entry")))
-                        {
-                            string dadoAtual = elemento.FindElement(By.ClassName("roulette-tile")).FindElement(By.ClassName("sm-box")).GetAttribute("class").Replace("sm-box ", "");
                         }
 
 
@@ -133,7 +137,8 @@ namespace Blaze_2._0 {
                         }
 
 
-                    } catch {
+                    } 
+                    catch {
 
                     }
 

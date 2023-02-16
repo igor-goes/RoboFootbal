@@ -29,11 +29,11 @@ namespace Blaze_2._0 {
                 }
             }
             else {
-                if(pn.BackColor == Color.DimGray) {
+                if(pn.BackColor == Color.Blue) {
                     pn.BackColor = Color.White;
                 }
                 else {
-                    pn.BackColor = Color.DimGray;
+                    pn.BackColor = Color.Blue ;
                 }
             }
         }
@@ -210,8 +210,8 @@ namespace Blaze_2._0 {
                             if(entrada == "red") {
                                 controles.BackColor = Color.Red;
                             }
-                            else if(entrada == "black") {
-                                controles.BackColor = Color.DimGray;
+                            else if(entrada == "blue") {
+                                controles.BackColor = Color.Blue;
                             }
                             else {
                                 controles.BackColor = Color.WhiteSmoke;
