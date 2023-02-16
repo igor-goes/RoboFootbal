@@ -11,6 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using OpenQA.Selenium.Support.UI;
 using System.Linq;
 using Telegram.Bot.Types;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Blaze_2._0 {
     class Crawler {
@@ -69,7 +70,14 @@ namespace Blaze_2._0 {
                 {
                     try {
                         int contador = 0;
-                        driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[1]/div/div/div/div/div[2]")).Click();
+                        try
+                        {
+                            driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[10]/div[1]/button")).Click();
+                        }
+                        catch(Exception ex)
+                        {
+                            Console.WriteLine(ex);
+                        }   
                         foreach (var teste in driver.FindElement(By.CssSelector("div[data-role ='history-statistic']")).FindElements(By.ClassName("historyItem--a1907")))
                         {
                             string dadoAtual = teste.FindElement(By.CssSelector("svg[fill = 'none'")).FindElement(By.CssSelector("g[filter = 'url(#history)'")).FindElement(By.CssSelector("text[font-size = '16'")).Text;

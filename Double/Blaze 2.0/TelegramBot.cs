@@ -25,7 +25,7 @@ namespace Blaze_2._0 {
                     mensagem = mensagem.Replace("{CORES}", "🔴 + ⚪️");
                 }
                 else {
-                    mensagem = mensagem.Replace("{CORES}", "⚫️ + ⚪️");
+                    mensagem = mensagem.Replace("{CORES}", "🔵 + ⚪️");
                 }
 
                 Emoji.ReplaceEmojis(ref mensagem);
@@ -87,11 +87,6 @@ namespace Blaze_2._0 {
             }
 
         }
-
-
-
-
-
     }
 
 }
