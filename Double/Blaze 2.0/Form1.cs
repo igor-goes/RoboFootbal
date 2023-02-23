@@ -12,11 +12,13 @@ using System.Threading;
 using System.Windows.Forms;
 
 namespace Blaze_2._0 {
+
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
         }
-
+        static int quantidadeWin = 0;
+        static int quantidadeLoss = 0;
 
         private void ClickCor(object sender, MouseEventArgs e) {
             Panel pn = (Panel)sender;
@@ -53,7 +55,7 @@ namespace Blaze_2._0 {
 
             if(e.Button == MouseButtons.Left) {
                 if(pn.BackColor == Color.Red) {
-                    pn.BackColor = Color.White;
+                    pn.BackColor = Color.White ;
                 }
                 else {
                     pn.BackColor = Color.Red;
@@ -637,6 +639,7 @@ namespace Blaze_2._0 {
                 if(bool.Parse(DgDados[15, linhaEstrategia].Value.ToString())) {
                     new TelegramBot().EnviarMensagem(Mensagem.mensagem.Loss, true, EnumMensagem.Loss, DgDados[12, linhaEstrategia].Style.BackColor);
                 }
+                quantidadeLoss++;
                 PontuarJogada(false, linhaEstrategia);
 
             }
@@ -697,17 +700,16 @@ namespace Blaze_2._0 {
 
         }
 
-
-
-
-
-
         private void PontuarJogada(bool win, int linhaEstrategia) {
 
             if(bool.Parse(DgDados[14, linhaEstrategia].Value.ToString())) {
                 string w = "1";
                 if(!win) {
                     w = "0";
+                }
+                else
+                {
+                    quantidadeWin++;
                 }
 
                 string nome = DgDados[13, linhaEstrategia].Value.ToString();
@@ -771,6 +773,19 @@ namespace Blaze_2._0 {
         private void Pn6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public int QuantidadeWin()
+        {
+            int quantidade = quantidadeWin;
+            quantidadeWin = 0;
+            return quantidade;
+        }
+        public int QuantidadeLoss()
+        {
+            int quantidade = quantidadeLoss;
+            quantidadeLoss = 0;
+            return quantidade;
         }
     }
 }

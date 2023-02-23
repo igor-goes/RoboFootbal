@@ -22,10 +22,10 @@ namespace Blaze_2._0 {
             try {
 
                 if(corWin == Color.Red) {
-                    mensagem = mensagem.Replace("{CORES}", "🔴 + ⚪️");
+                    mensagem = mensagem.Replace("{CORES}", "🔴 + 🟤");
                 }
                 else {
-                    mensagem = mensagem.Replace("{CORES}", "🔵 + ⚪️");
+                    mensagem = mensagem.Replace("{CORES}", "🔵 + 🟤");
                 }
 
                 Emoji.ReplaceEmojis(ref mensagem);

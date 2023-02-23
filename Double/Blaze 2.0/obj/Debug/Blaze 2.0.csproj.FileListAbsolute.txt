@@ -1,0 +1,51 @@
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\NLog.config
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Double.exe.config
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Double.exe.manifest
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Double.application
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Double.exe
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Double.pdb
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\AngleSharp.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\MySql.Data.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\NLog.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Telegram.Bot.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\WebDriver.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\WebDriverManager.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Google.Protobuf.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\ZstdNet.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\System.Buffers.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\AngleSharp.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\MySql.Data.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\NLog.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\bin\Debug\Telegram.Bot.xml
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze 2.0.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Form1.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.FrmLogin.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Properties.Resources.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Splash.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmConfiguracao.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmMensagem.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmPlacar.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmTelegram.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmTimeLine.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze_2._0.Telas_menus.FrmUsuario.resources
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze 2.0.csproj.GenerateResource.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze 2.0.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Double.exe.manifest
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Double.application
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Blaze 2.0.csproj.CopyComplete
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Double.exe
+C:\Users\Pichau\Desktop\RoboFootbal\Double\Blaze 2.0\obj\Debug\Double.pdb

@@ -12,6 +12,8 @@ using OpenQA.Selenium.Support.UI;
 using System.Linq;
 using Telegram.Bot.Types;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using Telegram.Bot;
+using System.Windows.Forms;
 
 namespace Blaze_2._0 {
     class Crawler {
@@ -23,11 +25,17 @@ namespace Blaze_2._0 {
 
 
         ChromeDriver driver;
+        int horaJogada = 0;
+
         private IWebDriver _webDriver;
+        public static Form1 teste = new Form1();
+        private static TelegramBotClient client = new TelegramBotClient(Blaze_2._0.Entities.Telegram.telegram.Token);
         public void Iniciar() {
             try {
                 DownloadChorme.DonwloadChorme();
                 retornos = new string[12];
+                int quantidadeWin = 0;
+                int quantidadeLoss = 0;
 
 
                 ChromeDriverService service = ChromeDriverService.CreateDefaultService(Path.GetTempPath() + @"\V4");
@@ -51,7 +59,8 @@ namespace Blaze_2._0 {
 
                 }
                 driver.Navigate().GoToUrl("https://casino.netbet.com/br/play/football-studio");
-                Thread.Sleep(10000);
+                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
+                IWebElement firstResult = wait.Until(e => e.FindElement(By.Name("username")));
                 driver.FindElement(By.Name("username")).Click();
                 driver.FindElement(By.Name("username")).SendKeys("goesi195@gmail.com");
                 driver.FindElement(By.Name("password")).Click();
@@ -59,9 +68,7 @@ namespace Blaze_2._0 {
                 driver.FindElement(By.XPath("//*[@id=\"LoginModal\"]/div/div/div/div/div[2]/div/div/div[2]/div/div/div/div/form/div[3]/div[1]/div/button")).Click();
 
                 string[] ultimasEntradas = new string[10];
-
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(90));
-                IWebElement firstResult = wait.Until(e => e.FindElement(By.ClassName("game-iframe")));
+                firstResult = wait.Until(e => e.FindElement(By.ClassName("game-iframe")));
 
                 IWebElement iframe = driver.FindElement(By.ClassName("game-iframe"));
                 driver.SwitchTo().Frame(iframe);
@@ -69,15 +76,41 @@ namespace Blaze_2._0 {
                 while (true)
                 {
                     try {
-                        int contador = 0;
+
+                        if (!driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("") && !driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("O seu saldo é muito baixo para jogar."))
+                        {
+                            Close();
+                            Iniciar();
+                        }
+
+                        // Obter a hora atual
+                        DateTime now = DateTime.Now;
+                        // Verificar se a hora é 12h ou 00h
+
+                        if ((now.Hour == 12 || now.Hour == 00) && now.Hour != horaJogada)
+                        {
+                            quantidadeWin = teste.QuantidadeWin();
+                            quantidadeLoss = teste.QuantidadeLoss();
+                            double porcentagem = (quantidadeLoss * 100) / (quantidadeWin + quantidadeLoss);
+                            if (quantidadeLoss == 0)
+                                porcentagem = 100;
+                            client.SendTextMessageAsync(chatId: Blaze_2._0.Entities.Telegram.telegram.IdTelegram, text: "📊 PLACAR BLACK OWLS 🦉 \r\n\r\n ✅ WIN:" + quantidadeWin + "\r\n ❌ LOSS: " + quantidadeLoss + "\r\n\r\n 🎯 Assertividade: " + porcentagem + "%"); ;
+                            // Saída do loop infinitos
+                            horaJogada = now.Hour;
+                        }
+                            int contador = 0;
                         try
                         {
                             driver.FindElement(By.XPath("/html/body/div[4]/div/div[2]/div/div[2]/div[10]/div[1]/button")).Click();
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
-                            Console.WriteLine(ex);
-                        }   
+                            if (!ex.ToString().Contains("Unable to locate element:"))
+                            {
+                                driver.FindElement(By.ClassName("clickable--394a7")).Click();
+                            }
+
+                        }
                         foreach (var teste in driver.FindElement(By.CssSelector("div[data-role ='history-statistic']")).FindElements(By.ClassName("historyItem--a1907")))
                         {
                             string dadoAtual = teste.FindElement(By.CssSelector("svg[fill = 'none'")).FindElement(By.CssSelector("g[filter = 'url(#history)'")).FindElement(By.CssSelector("text[font-size = '16'")).Text;
@@ -146,8 +179,7 @@ namespace Blaze_2._0 {
 
 
                     } 
-                    catch {
-
+                    catch (Exception ex){
                     }
 
                 }

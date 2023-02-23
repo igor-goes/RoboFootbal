@@ -11,17 +11,17 @@
     <deploymentProvider codebase="http://www.wrcode.com.br/Client/Suits/Double/Double.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Double.exe.manifest" size="9240">
+    <dependentAssembly dependencyType="install" codebase="Double.exe.manifest" size="17671">
       <assemblyIdentity name="Double.exe" version="1.0.0.26" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mOqKxevguA0o9EMeE6WAQbIdAHoNeFsc0FVxMj8DfuM=</dsig:DigestValue>
+        <dsig:DigestValue>X9ETe7lULbdsz5FzEeShV3JCahCTMjkBtcTEYfZ9ZLg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

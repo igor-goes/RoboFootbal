@@ -73,6 +73,16 @@ namespace Blaze_2._0.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coruja {
+            get {
+                object obj = ResourceManager.GetObject("coruja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap free {
             get {
                 object obj = ResourceManager.GetObject("free", resourceCulture);
@@ -86,16 +96,6 @@ namespace Blaze_2._0.Properties {
         internal static System.Drawing.Bitmap logo_blaze {
             get {
                 object obj = ResourceManager.GetObject("logo-blaze", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap suitsblaze {
-            get {
-                object obj = ResourceManager.GetObject("suitsblaze", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

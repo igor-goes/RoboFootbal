@@ -39,7 +39,7 @@ namespace Blaze_2._0 {
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Blaze_2._0.Properties.Resources.suitsblaze;
+            this.pictureBox1.Image = global::Blaze_2._0.Properties.Resources.coruja ;
             this.pictureBox1.Location = new System.Drawing.Point(90, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(77, 72);

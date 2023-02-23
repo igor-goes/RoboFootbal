@@ -64,7 +64,8 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>suitsblaze.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
@@ -249,15 +250,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\suitsblaze.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="free.ico" />
     <Content Include="logo-blaze %281%29.ico" />
     <None Include="Resources\logo-blaze.png" />
     <None Include="Resources\free.png" />
     <Content Include="Resources\chromedriver.exe" />
-    <Content Include="suitsblaze.ico" />
+    <Content Include="Resources\coruja.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
