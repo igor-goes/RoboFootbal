@@ -12,11 +12,13 @@ using System.Threading;
 using System.Windows.Forms;
 
 namespace Blaze_2._0 {
+
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
         }
-
+        static int quantidadeWin = 0;
+        static int quantidadeLoss = 0;
 
         private void ClickCor(object sender, MouseEventArgs e) {
             Panel pn = (Panel)sender;
@@ -29,11 +31,11 @@ namespace Blaze_2._0 {
                 }
             }
             else {
-                if(pn.BackColor == Color.DimGray) {
+                if(pn.BackColor == Color.Blue) {
                     pn.BackColor = Color.White;
                 }
                 else {
-                    pn.BackColor = Color.DimGray;
+                    pn.BackColor = Color.Blue ;
                 }
             }
         }
@@ -53,18 +55,18 @@ namespace Blaze_2._0 {
 
             if(e.Button == MouseButtons.Left) {
                 if(pn.BackColor == Color.Red) {
-                    pn.BackColor = Color.White;
+                    pn.BackColor = Color.White ;
                 }
                 else {
                     pn.BackColor = Color.Red;
                 }
             }
             else {
-                if(pn.BackColor == Color.DimGray) {
+                if(pn.BackColor == Color.Blue) {
                     pn.BackColor = Color.White;
                 }
                 else {
-                    pn.BackColor = Color.DimGray;
+                    pn.BackColor = Color.Blue    ;
                 }
             }
         }
@@ -124,7 +126,7 @@ namespace Blaze_2._0 {
                         cores[contador] = Color.Red;
                     }
                     else if(dado == "0") {
-                        cores[contador] = Color.DimGray;
+                        cores[contador] = Color.Blue;
                     }
                     else if(dado == "-1") {
                         cores[contador] = Color.White;
@@ -210,8 +212,8 @@ namespace Blaze_2._0 {
                             if(entrada == "red") {
                                 controles.BackColor = Color.Red;
                             }
-                            else if(entrada == "black") {
-                                controles.BackColor = Color.DimGray;
+                            else if(entrada == "blue") {
+                                controles.BackColor = Color.Blue;
                             }
                             else {
                                 controles.BackColor = Color.WhiteSmoke;
@@ -332,7 +334,7 @@ namespace Blaze_2._0 {
                     cores.Append("1;");
                     dados[t] = "1";
                 }
-                else if(DgDados[t, DgDados.Rows.Count - 1].Style.BackColor == Color.DimGray) {
+                else if(DgDados[t, DgDados.Rows.Count - 1].Style.BackColor == Color.Blue) {
                     cores.Append("0;");
                     dados[t] = "0";
                 }
@@ -390,9 +392,6 @@ namespace Blaze_2._0 {
                     coresAtuais.Add(pn.BackColor);
                 }
 
-
-
-
                 for(int linha = 0;linha < DgDados.Rows.Count;linha++) {
 
                     if(!bool.Parse(DgDados[14, linha].Value.ToString()) && !bool.Parse(DgDados[15, linha].Value.ToString())) {
@@ -402,7 +401,7 @@ namespace Blaze_2._0 {
 
 
                     for(int coluna = DgDados.Columns.Count - 6;coluna >= 0;coluna--) {
-                        if(DgDados[coluna, linha].Style.BackColor == Color.Red || DgDados[coluna, linha].Style.BackColor == Color.DimGray) {
+                        if(DgDados[coluna, linha].Style.BackColor == Color.Red || DgDados[coluna, linha].Style.BackColor == Color.Blue) {
                             coresEstrategias.Add(DgDados[coluna, linha].Style.BackColor);
                         }
                     }
@@ -640,6 +639,7 @@ namespace Blaze_2._0 {
                 if(bool.Parse(DgDados[15, linhaEstrategia].Value.ToString())) {
                     new TelegramBot().EnviarMensagem(Mensagem.mensagem.Loss, true, EnumMensagem.Loss, DgDados[12, linhaEstrategia].Style.BackColor);
                 }
+                quantidadeLoss++;
                 PontuarJogada(false, linhaEstrategia);
 
             }
@@ -700,17 +700,16 @@ namespace Blaze_2._0 {
 
         }
 
-
-
-
-
-
         private void PontuarJogada(bool win, int linhaEstrategia) {
 
             if(bool.Parse(DgDados[14, linhaEstrategia].Value.ToString())) {
                 string w = "1";
                 if(!win) {
                     w = "0";
+                }
+                else
+                {
+                    quantidadeWin++;
                 }
 
                 string nome = DgDados[13, linhaEstrategia].Value.ToString();
@@ -774,6 +773,19 @@ namespace Blaze_2._0 {
         private void Pn6_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        public int QuantidadeWin()
+        {
+            int quantidade = quantidadeWin;
+            quantidadeWin = 0;
+            return quantidade;
+        }
+        public int QuantidadeLoss()
+        {
+            int quantidade = quantidadeLoss;
+            quantidadeLoss = 0;
+            return quantidade;
         }
     }
 }
