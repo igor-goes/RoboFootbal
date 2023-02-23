@@ -44,7 +44,6 @@ namespace Blaze_2._0 {
 
                 ChromeOptions options = new ChromeOptions();
                    options.AddArgument("headless");
-                string teste = "lsksks";
 
                 try
                 {
