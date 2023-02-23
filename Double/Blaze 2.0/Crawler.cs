@@ -43,7 +43,7 @@ namespace Blaze_2._0 {
                 service.HideCommandPromptWindow = true;
 
                 ChromeOptions options = new ChromeOptions();
-                options.AddArgument("headless");
+                   options.AddArgument("headless");
 
                 try
                 {
