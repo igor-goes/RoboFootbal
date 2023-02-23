@@ -87,7 +87,7 @@ namespace Blaze_2._0 {
                         DateTime now = DateTime.Now;
                         // Verificar se a hora é 12h ou 00h
 
-                        if ((now.Hour == 12 || now.Hour == 00) && now.Hour != horaJogada)
+                        if (((now.Hour == 12 || now.Hour == 00) && now.Hour != horaJogada) && teste.QuantidadeLoss() != 0 && teste.QuantidadeWin() != 0)
                         {
                             quantidadeWin = teste.QuantidadeWin();
                             quantidadeLoss = teste.QuantidadeLoss();
