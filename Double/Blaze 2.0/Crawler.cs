@@ -40,21 +40,20 @@ namespace Blaze_2._0 {
 
                 ChromeDriverService service = ChromeDriverService.CreateDefaultService(Path.GetTempPath() + @"\V4");
                 string oi = Path.GetTempPath() + @"\V4";
+                Console.WriteLine(oi);
                 service.HideCommandPromptWindow = true;
 
                 ChromeOptions options = new ChromeOptions();
-                   options.AddArgument("headless");
+               // options.AddArgument("headless");
 
                 try
                 {
-                    new DriverManager().SetUpDriver(new ChromeConfig(), "109.0.5414.74");
 
                     driver = new ChromeDriver(service,options);
 
                 }
                 catch
                 {
-                    new DriverManager().SetUpDriver(new ChromeConfig(), "110.0.5481.30");
                     driver = new ChromeDriver(service,options);
 
                 }
@@ -76,8 +75,18 @@ namespace Blaze_2._0 {
                 while (true)
                 {
                     try {
+                        if (driver.FindElement(By.ClassName("contentElement--e8ecb")).Text == null)
+                        {
+                            Close();
+                            Iniciar();
+                        }
+                        else if (driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("sessão"))
+                        {
+                            Close();
+                            Iniciar();
+                        }
 
-                        if (!driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("") && !driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("O seu saldo é muito baixo para jogar."))
+                        else if(!driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("") && !driver.FindElement(By.ClassName("contentElement--e8ecb")).Text.Contains("O seu saldo é muito baixo para jogar."))
                         {
                             Close();
                             Iniciar();
@@ -87,14 +96,17 @@ namespace Blaze_2._0 {
                         DateTime now = DateTime.Now;
                         // Verificar se a hora é 12h ou 00h
 
-                        if (((now.Hour == 12 || now.Hour == 00) && now.Hour != horaJogada) && teste.QuantidadeLoss() != 0 && teste.QuantidadeWin() != 0)
+                        if (((now.Hour == 12 || now.Hour == 00) && now.Hour != horaJogada) && teste.QuantidadeWin() != 0)
                         {
+
                             quantidadeWin = teste.QuantidadeWin();
                             quantidadeLoss = teste.QuantidadeLoss();
-                            double porcentagem = (quantidadeLoss * 100) / (quantidadeWin + quantidadeLoss);
+                            double porcentagem = 0;
                             if (quantidadeLoss == 0)
                                 porcentagem = 100;
-                            client.SendTextMessageAsync(chatId: Blaze_2._0.Entities.Telegram.telegram.IdTelegram, text: "📊 PLACAR BLACK OWLS 🦉 \r\n\r\n ✅ WIN:" + quantidadeWin + "\r\n ❌ LOSS: " + quantidadeLoss + "\r\n\r\n 🎯 Assertividade: " + porcentagem + "%"); ;
+                            else
+                                porcentagem = (quantidadeLoss * 100) / (quantidadeWin + quantidadeLoss);
+                            client.SendTextMessageAsync(chatId: -1001822411577, text: "📊 PLACAR BLACK OWLS 🦉 \r\n\r\n ✅ WIN:" + quantidadeWin + "\r\n ❌ LOSS: " + quantidadeLoss + "\r\n\r\n 🎯 Assertividade: " + porcentagem + "%"); ;
                             // Saída do loop infinitos
                             horaJogada = now.Hour;
                         }

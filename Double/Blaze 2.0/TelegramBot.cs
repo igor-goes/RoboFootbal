@@ -32,10 +32,10 @@ namespace Blaze_2._0 {
 
                 Telegram.Bot.Types.Message msgAtual;
                 if(responder) {
-                    msgAtual = await client.SendTextMessageAsync(chatId: Blaze_2._0.Entities.Telegram.telegram.IdTelegram, text: mensagem, parseMode: Telegram.Bot.Types.Enums.ParseMode.Html, disableWebPagePreview: true, replyToMessageId: idResposta);
+                    msgAtual = await client.SendTextMessageAsync(chatId: -1001822411577, text: mensagem, parseMode: Telegram.Bot.Types.Enums.ParseMode.Html, disableWebPagePreview: true, replyToMessageId: idResposta);
                 }
                 else {
-                    msgAtual = await client.SendTextMessageAsync(chatId: Blaze_2._0.Entities.Telegram.telegram.IdTelegram, text: mensagem, parseMode: Telegram.Bot.Types.Enums.ParseMode.Html, disableWebPagePreview: true);
+                    msgAtual = await client.SendTextMessageAsync(chatId: -1001822411577, text: mensagem, parseMode: Telegram.Bot.Types.Enums.ParseMode.Html, disableWebPagePreview: true);
                 }
 
                 idResposta = msgAtual.MessageId;
